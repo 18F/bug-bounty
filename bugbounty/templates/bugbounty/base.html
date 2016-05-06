@@ -1,0 +1,14 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>{% block title %}18F Bug Bounty{% endblock %}</title>
+      <link rel="stylesheet" href="{% static "css/uswds.min.css" %}">
+  </head>
+  <body>
+  {% block content %}{% endblock %}
+  <script src="{% static "js/uswds.min.js" %}"></script>
+  </body>
+</html>

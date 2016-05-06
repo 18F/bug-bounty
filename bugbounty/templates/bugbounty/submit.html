@@ -1,0 +1,20 @@
+{% extends "bugbounty/base.html" %}
+
+{% block content %}
+  {% load floppyforms %}
+  <div class="usa-grid">
+    <div class="usa-width-one-whole">
+      <h1>Submit a report to the 18F Bug Bounty</h1>
+      <p class="usa-font-lead">
+          Please make sure you've read the rules and FAQ first! 
+      </p>
+      <form method="POST" action=".">
+        {% csrf_token %}
+        {% form form %}
+        <div class="button_wrapper">
+          <button class="usa-button-big" type="submit">Default</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,6 @@
+Django>=1.9,<1.10
+psycopg2
+dj-database-url
+django-enumfields
+whitenoise
+django-floppyforms
