@@ -2,28 +2,28 @@
 # .about.yml project metadata
 #
 # This is a short name of your project that can be used as a URL slug. (required)
-name:
+name: bug-bounty
 
 # This is the display name of your project. (required)
-full_name:
+full_name: Bug Bounty
 
 # What is the problem your project solves? What is the solution? Use the format shown below. The #dashboard team will gladly help you put this together for your project. (required)
-description:
+description: A microsite for our bug bounty 
 
 # What is the measurable impact of your project? Use the format shown below. The #dashboard team will gladly help you put this together for your project. (required)
 impact:
 
 # What kind of team owns the repository? (required)
 # values: guild, working-group, project
-owner_type:
+owner_type: \#cybersec
 
 # What is your project's current status? (required)
 # values: discovery, alpha, beta, live
-stage:
+stage: discovery
 
 # Should this repo have automated tests? If so, set to `true`. (required)
 # values: true, false
-testable:
+testable: true
 
 # What are the licenses that apply to the project and/or its components? (required)
 # Items by property name pattern:
