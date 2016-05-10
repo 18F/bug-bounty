@@ -2,30 +2,35 @@
 
 {% block content %}
   {% load floppyforms %}
-  <div class="usa-grid">
-    <div class="usa-width-one-whole">
-      <h1>Submit a report to the 18F Bug Bounty</h1>
-      <p class="usa-font-lead">
-          Please make sure you've read the rules and FAQ first! 
+  <h1>Submit a report to the 18F Bug Bounty</h1>
+
+  <div class="usa-alert usa-alert-info">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Have you read the rules?</h3>
+      <p class="usa-alert-text">
+        Please be sure your submission complies with our 
+        <a href="{% url "bounty-index" %}#rules">rules and scope</a> 
+        before continuing.
       </p>
-      <form method="POST" action="." class="usa-form-large">
-        {% csrf_token %}
-        {% for field in form %}
-          {% if field.errors %}<div class="usa-input-error">{% endif %}
-            <label for="{{ field|id }}" {% if field.errors %}class="usa-input-error-label"{% endif %}>
-              {{ field.label }}:
-            </label>
-            {% for error in field.errors %}
-              <span class="usa-input-error-message" role="alert">{{ error }}</span>
-            {% endfor %}
-            {% widget field %}
-            {% if field.help_text %}<div class="help-text">{{ field.help_text }}</div>{% endif %}
-          {% if field.errors %}</div>{% endif %}
-        {% endfor %}
-        <div class="button_wrapper">
-          <button class="usa-button-big" type="submit">Default</button>
-        </div>
-      </form>
     </div>
   </div>
+
+  <form method="POST" action="." class="usa-form-large">
+    {% csrf_token %}
+    {% for field in form %}
+      {% if field.errors %}<div class="usa-input-error">{% endif %}
+        <label for="{{ field|id }}" {% if field.errors %}class="usa-input-error-label"{% endif %}>
+          {{ field.label }}:
+        </label>
+        {% for error in field.errors %}
+          <span class="usa-input-error-message" role="alert">{{ error }}</span>
+        {% endfor %}
+        {% widget field %}
+        {% if field.help_text %}<div class="help-text">{{ field.help_text }}</div>{% endif %}
+      {% if field.errors %}</div>{% endif %}
+    {% endfor %}
+    <div class="button_wrapper">
+      <button class="usa-button-big" type="submit">Default</button>
+    </div>
+  </form>
 {% endblock content %}

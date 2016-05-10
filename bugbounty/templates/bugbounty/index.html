@@ -1,43 +1,35 @@
 {% extends "bugbounty/base.html" %}
 
 {% block content %}
-  <div class="usa-grid">
-    <div class="usa-width-one-whole">
-        <h1>18F Bug Bounty</h1>
-        <p class="usa-font-lead">
-          Introductory hero text here. Marzipan tootsie roll sugar plum gingerbread I love danish bonbon carrot cake. Cupcake marzipan sweet roll. Cotton candy halvah cake. Wafer jelly jelly-o cheesecake cupcake I love. Pie chupa chups jujubes. Icing cotton candy danish sweet roll. Pudding jelly-o gummi bears chocolate cake carrot cake lemon drops jelly liquorice I love. Tootsie roll jujubes donut carrot cake donut macaroon fruitcake. Croissant I love dessert powder oat cake chocolate cake tootsie roll. Lollipop icing pie I love danish lemon drops powder. Toffee chocolate cake candy jelly-o I love cotton candy cookie. Muffin chocolate cake gummi bears I love I love. Wafer sweet roll gingerbread topping apple pie.
-        </p>
+  <h1>18F Bug Bounty</h1>
+  <p class="usa-font-lead">
+    Introductory hero text here. Marzipan tootsie roll sugar plum gingerbread I love danish bonbon carrot cake. Cupcake marzipan sweet roll. Cotton candy halvah cake. Wafer jelly jelly-o cheesecake cupcake I love. Pie chupa chups jujubes. Icing cotton candy danish sweet roll. Pudding jelly-o gummi bears chocolate cake carrot cake lemon drops jelly liquorice I love. Tootsie roll jujubes donut carrot cake donut macaroon fruitcake. Croissant I love dessert powder oat cake chocolate cake tootsie roll. Lollipop icing pie I love danish lemon drops powder. Toffee chocolate cake candy jelly-o I love cotton candy cookie. Muffin chocolate cake gummi bears I love I love. Wafer sweet roll gingerbread topping apple pie.
+  </p>
 
-        <h2>Rules</h2>
-        <h3>Rules for you</h3>
-        <ul>
-          <li><strong>Do</strong> this.
-          <li><strong>Don't</strong> do the other thing.
-        </ul>
-
-        <h3>Rules for us</h3>
-        <ul>
-          <li>We will do this thing.</li>
-          <li>And, also this thing!</li>
-        </ul>
-
-        <h2>Scope</h2>
-        <h3>What's in scope?</h3>
-        <ul>
-          <li>somesite.gsa.gov</li>
-          <li>andanother.gsa.gov</li>
-        </ul>
-
-        <h3>What's out of scope?</h3>
-        <ul>
-          <li>Oh god please no <code>X-frame-options</code> reports.</li>
-        </ul>
-
-        <h2>FAQ</h3>
-        <h3>Do I need this section?</h3>
-        <p>Maybe, maybe not.</p>
-        <p>If there's much more writing here, however, I should convert this to Markdown.</p>
-
+  <div class="usa-alert usa-alert-info">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Ready to participate?</h3>
+      <p class="usa-alert-text">
+        Please read the <a href="#rules">rules</a> and 
+        <a href="#scope">scope</a> of the program, then 
+        <a href="{% url "bounty-submit" %}">submit a bug report</a>.
+      </p>
     </div>
   </div>
+
+  <div id="rules">{{ rules }}</div>
+  <div id="scope">{{ scope }}</div>
+  <div id="faq">{{ faq }}</div>
+
+  <div class="usa-alert usa-alert-info">
+    <div class="usa-alert-body">
+      <h3 class="usa-alert-heading">Ready to participate?</h3>
+      <p class="usa-alert-text">
+        Please read the <a href="#rules">rules</a> and 
+        <a href="#scope">scope</a> of the program, then 
+        <a href="{% url "bounty-submit" %}">submit a bug report</a>.
+      </p>
+    </div>
+  </div>
+
 {% endblock content %}
