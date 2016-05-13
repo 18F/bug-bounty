@@ -14,7 +14,7 @@
 
 ### Rules for us
 
-- We will respond as quickly as possible to your submission. You should generally expect a response within one business day of your submission.
+- We will respond as quickly as possible to your submission. You should expect a response within one week of your submission (and often sooner).
 - We will keep you updated as we work to fix the bug you submitted. 
 - We will fix reported issues within 90 days (and typically much faster). If we can't, we'll give you permission to go public after 90 days.
 - We will not take legal action against you if you play by the rules.

@@ -24,3 +24,8 @@ def submit(request):
 
 def thanks(request):
     return render(request, "bugbounty/thanks.html")
+
+def page(request, slug, template="bugbounty/page.html"):
+    return render(request, template, {
+        'content': _load_content(slug)
+    })
