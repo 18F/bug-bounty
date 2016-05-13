@@ -5,4 +5,6 @@ django-floppyforms==1.6.2
 Markdown==2.6.6
 psycopg2==2.6.1
 six==1.10.0
+WebOb==1.6.0
 whitenoise==3.0
+wsgi-basic-auth==0.0.3
