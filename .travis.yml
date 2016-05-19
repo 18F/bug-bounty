@@ -4,4 +4,5 @@ python:
 install: 
   - pip install -r requirements.txt
   - pip install -r dev-requirements.txt
+  - python manage.py collectstatic --no-input
 script: py.test

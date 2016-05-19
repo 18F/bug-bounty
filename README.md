@@ -1,5 +1,7 @@
 # 18F Bug Bounty website
 
+[![Build Status](https://travis-ci.org/18F/bug-bounty.svg?branch=master)](https://travis-ci.org/18F/bug-bounty)
+
 **Work in progress**. We're working on it, but we're not accepting bug bounty submissions yet. Please do not submit them here, or anywhere, until this gets officially launched!
 
 ### Public domain
