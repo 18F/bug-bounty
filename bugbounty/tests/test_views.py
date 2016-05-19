@@ -22,7 +22,7 @@ class ModelViewTests(django.test.TestCase):
     """Tests for views that do require a DB."""
 
     def setUp(self):
-        self.target = Target.objects.create(name="Test Target")
+        self.target = Target.objects.create(name="Test Target", is_active=True)
         self.target.owners.create(username='john', email='lennon@beatles.com')
 
     def test_submit(self):

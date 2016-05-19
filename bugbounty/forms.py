@@ -1,5 +1,5 @@
 import floppyforms.__future__ as forms
-from .models import Report
+from .models import Report, Target
 from django.core.mail import send_mail
 from django import template 
 
@@ -18,6 +18,9 @@ class ReportForm(forms.ModelForm):
         help_texts = {
             'reporter_email': "We'll only use this email to contact you about your report. We hate spam as much as you do."
         }
+
+    # Only allow active targets to be reported against
+    target = forms.ModelChoiceField(queryset=Target.objects.filter(is_active=True)) 
 
     def save(self, *args, **kwargs):
         report = super().save(*args, **kwargs)
