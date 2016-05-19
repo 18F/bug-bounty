@@ -18,7 +18,7 @@ class Target(models.Model):
     owners = models.ManyToManyField(User, related_name='owned_bounty_targets')
     is_active = models.BooleanField(default=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 class ReportType(enumfields.Enum):
@@ -77,6 +77,6 @@ class Report(models.Model):
         self.date_updated = timezone.now()
         super().save(*args, **kwargs)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
