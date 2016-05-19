@@ -1,4 +1,5 @@
 import django.test
+from django.core import mail
 from django.core.urlresolvers import reverse
 from bugbounty.models import Report, Target
 
@@ -20,12 +21,16 @@ class SimpleViewTests(django.test.SimpleTestCase):
 class ModelViewTests(django.test.TestCase):
     """Tests for views that do require a DB."""
 
+    def setUp(self):
+        self.target = Target.objects.create(name="Test Target")
+        self.target.owners.create(username='john', email='lennon@beatles.com')
+
     def test_submit(self):
-        t = Target.objects.create(name="Test Target")
+        
         data = {
             "reporter_name": "George Harrison",
             "reporter_email": "george@beatles.com",
-            "target": t.id,
+            "target": self.target.id,
             "type": "xss",
             "title": "This is my bug report.",
             "details": "It isn't very long."
@@ -35,3 +40,7 @@ class ModelViewTests(django.test.TestCase):
 
         report = Report.objects.get(reporter_email=data['reporter_email'])
         assert report.title == data['title']
+
+        assert len(mail.outbox) == 1
+        assert mail.outbox[0].subject == '[Bug Bounty] New report against Test Target'
+        assert mail.outbox[0].to == [o.email for o in self.target.owners.all()]

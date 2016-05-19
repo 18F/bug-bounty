@@ -1,5 +1,7 @@
 import floppyforms.__future__ as forms
 from .models import Report
+from django.core.mail import send_mail
+from django import template 
 
 class ReportForm(forms.ModelForm):
     class Meta:
@@ -14,5 +16,24 @@ class ReportForm(forms.ModelForm):
             'reporter_email': 'Your email',
         }
         help_texts = {
-            'reporter_email': "We'll only use this email to contact you about your submission. We hate spam as much as you do."
+            'reporter_email': "We'll only use this email to contact you about your report. We hate spam as much as you do."
         }
+
+    def save(self, *args, **kwargs):
+        report = super().save(*args, **kwargs)
+        
+        t = template.loader.get_template('bugbounty/new-report-email.txt')
+        c = template.Context({'report': report})
+        mail_message = t.render(c)
+
+        send_mail(
+            subject = "[Bug Bounty] New report against {}".format(report.target.name),
+            message = mail_message,
+            recipient_list = [o.email for o in report.target.owners.all()],
+
+            # FIXME - I'm not sure if this actually does what I want. 
+            # Need to verify that it does and that it works. 
+            from_email = report.reporter_email
+        )
+
+        return report
