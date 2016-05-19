@@ -1,6 +1,6 @@
 import django.test
 from django.core.urlresolvers import reverse
-from bugbounty.models import Report
+from bugbounty.models import Report, Target
 
 class SimpleViewTests(django.test.SimpleTestCase):
     """Tests for views that don't require a DB."""
@@ -21,9 +21,11 @@ class ModelViewTests(django.test.TestCase):
     """Tests for views that do require a DB."""
 
     def test_submit(self):
+        t = Target.objects.create(name="Test Target")
         data = {
             "reporter_name": "George Harrison",
             "reporter_email": "george@beatles.com",
+            "target": t.id,
             "type": "xss",
             "title": "This is my bug report.",
             "details": "It isn't very long."

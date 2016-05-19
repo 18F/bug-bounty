@@ -4,7 +4,7 @@ from .models import Report
 class ReportForm(forms.ModelForm):
     class Meta:
         model = Report
-        fields = ['reporter_name', 'reporter_email', 'type', 'title', 'details']
+        fields = ['reporter_name', 'reporter_email', 'target', 'type', 'title', 'details']
         widgets = {
             'reporter_name': forms.TextInput(),
             'title': forms.TextInput(),
