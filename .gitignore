@@ -1,4 +1,7 @@
-staticfiles
 *.pyc
-__pycache__
+.cache
+.coverage
 .env
+__pycache__
+htmlcov/
+staticfiles

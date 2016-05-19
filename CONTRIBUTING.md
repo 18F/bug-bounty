@@ -8,6 +8,13 @@ We encourage you to read this project's CONTRIBUTING policy (you are here), its 
 
 If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or just [shoot us an email](mailto:18f@gsa.gov).
 
+## How to run tests
+
+```bash
+$ pip install -r dev-requirements.txt
+$ py.test
+```
+
 ## Public domain
 
 This project is in the public domain within the United States, and
