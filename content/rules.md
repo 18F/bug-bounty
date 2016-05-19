@@ -7,9 +7,9 @@
 - **Don't disclose issues publically until we give you permission.** You automatically have permission to disclose after we notify you that we've fixed the issue, or after 90 days have passed.
 - **Don't use scanners or automated tools to find vulnerabilities.** We may block your IP address(es) if you do, and vulnerabilities found with automated scanners aren't eligable for rewards.
 - DDoS and spam attacks are not allowed.
-- Non-technical attacks such as social engineering, phishing, or phsyical attacks on our offices or infrastructure aren't allowed.
+- Non-technical attacks such as social engineering, phishing, or physical attacks on our offices or infrastructure aren't allowed.
 - You must **follow [18F's code of conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md)** when interacting with us or other bounty participants.
-- You aren't eligable for rewards if you're a resident of a countries against which the United States has trade restrictions or export sanctions. 
+- You aren't eligible for rewards if you're a resident of a country against which the United States has trade restrictions or export sanctions. 
 - If you're under 13, we can't pay you directly; you'll need to claim your bounties through a parent or legal guardian.
 
 ### Rules for us
