@@ -5,8 +5,10 @@ install:
 - pip install -r requirements.txt
 - pip install -r dev-requirements.txt
 - pip install codeclimate-test-reporter
+- pip install bandit
 - python manage.py collectstatic --no-input
 script: 
+  - bandit -r .
   - py.test
   - codeclimate-test-reporter
 cache: pip
