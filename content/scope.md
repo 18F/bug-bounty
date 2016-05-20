@@ -6,13 +6,13 @@
 - `example2.example.gov`
 
 Remember, you may only look for vulnerabilities in sites listed above; anything
-else is out of scope. Submissions covering other domains/apps are not 
-eligable for rewards.
+else is out of scope. Submissions covering other domains/apps are not
+eligible for rewards.
 
 ### Bounty rewards
 
-The following guidlines gives some idea of typical bounties for certain
-classes of bugs. We'll typically follow these guidlines closely, but we do
+The following guidelines gives some idea of typical bounties for certain
+classes of bugs. We'll typically follow these guidelines closely, but we do
 reserve the right to adjust our rewards based on our assessment of severity and
 the quality of the report. For example, we may pay less for low-quality reports,
 or more for low-severity issues that are especially novel or required
@@ -21,7 +21,7 @@ significant effort.
 #### Tier 1: High Severity - $3,500
 
 - SQL injection
-- Remote Code Executioin
+- Remote Code Execution
 - Site-wide authentication bypass
 - Site-wide elevation of privilege
 - Widespread or complete personal information disclosure
@@ -45,16 +45,16 @@ significant effort.
 
 Certain types of vulnerabilities/bugs don't qualify. You're welcome to submit
 bugs in these categories, but we typically won't fix them, and you won't
-be eligable for any rewards.
+be eligible for any rewards.
 
-- Bugs that have already been submitted by another participant, and/or that we're already aware of, and/or that we've previously decided aren't eligable.
+- Bugs that have already been submitted by another participant, and/or that we're already aware of, and/or that we've previously decided aren't eligible.
 - Insecure cookie settings (e.g. lack of Secure/HTTPOnly flags) that don't present a security risk.
-- Issues such as timing attacks that reveal the existance of an account or a user.
+- Issues such as timing attacks that reveal the existence of an account or a user.
 - Brute-force attacks requiring substantial time or cost to exploit.
 - Issues generated/discovered by automated security scanners.
 - Publically-disclosed bugs in open-source software we re-use.
 - Denial-of-service attacks.
-- Bugs requiring phsyical access to machines or networks.
+- Bugs requiring physical access to machines or networks.
 - Version information disclosure.
 - Clickjacking on pre-authenticated pages, or the non-existence of `X-Frame-Options`, or other non-exploitable clickjacking issues.
 - Reports about Strict Transport Security (HSTS) headers
