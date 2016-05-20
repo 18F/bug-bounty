@@ -48,7 +48,7 @@ bugs in these categories, but we typically won't fix them, and you won't
 be eligable for any rewards.
 
 - Bugs that have already been submitted by another participant, and/or that we're already aware of, and/or that we've previously decided aren't eligable.
-- Insecure cookie settings that don't present a security risk.
+- Insecure cookie settings (e.g. lack of Secure/HTTPOnly flags) that don't present a security risk.
 - Issues such as timing attacks that reveal the existance of an account or a user.
 - Brute-force attacks requiring substantial time or cost to exploit.
 - Issues generated/discovered by automated security scanners.
@@ -67,5 +67,9 @@ be eligable for any rewards.
 - CSRF on non-authenticated forms (such as contact forms)
 - Logout CSRF
 - Reports about HTTP `OPTIONS` method being enabled
+- Presence of application or web browser ‘autocomplete’ or ‘save password’ functionality.
+- Lack of Security Speedbump when leaving the site.
+- Weak Captcha / Captcha Bypass
+- Forgot Password page brute force and account lockout not enforced.
 
 If you have any questions about what's in scope, please [email us](mailto:fixme@example.com) and we'll figure it out.
