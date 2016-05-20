@@ -1,7 +1,7 @@
 import floppyforms.__future__ as forms
 from .models import Report, Target
 from django.core.mail import send_mail
-from django import template 
+from django import template
 
 class ReportForm(forms.ModelForm):
     class Meta:
@@ -20,11 +20,11 @@ class ReportForm(forms.ModelForm):
         }
 
     # Only allow active targets to be reported against
-    target = forms.ModelChoiceField(queryset=Target.objects.filter(is_active=True)) 
+    target = forms.ModelChoiceField(queryset=Target.objects.filter(is_active=True))
 
     def save(self, *args, **kwargs):
         report = super().save(*args, **kwargs)
-        
+
         t = template.loader.get_template('bugbounty/new-report-email.txt')
         c = template.Context({'report': report})
         mail_message = t.render(c)
@@ -34,9 +34,9 @@ class ReportForm(forms.ModelForm):
             message = mail_message,
             recipient_list = [o.email for o in report.target.owners.all()],
 
-            # FIXME - I'm not sure if this actually does what I want. 
-            # Need to verify that it does and that it works. 
-            from_email = report.reporter_email
+            # FIXME - I'm not sure if this actually does what I want.
+            # Need to verify that it does and that it works.
+            from_email = report.reporter_email,
         )
 
         return report

@@ -26,7 +26,6 @@ class ModelViewTests(django.test.TestCase):
         self.target.owners.create(username='john', email='lennon@beatles.com')
 
     def test_submit(self):
-        
         data = {
             "reporter_name": "George Harrison",
             "reporter_email": "george@beatles.com",

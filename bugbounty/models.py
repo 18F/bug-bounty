@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 class Target(models.Model):
     """
     A project/app in scope for the bounty.
-    
-    They can be active (acepting reports) or not, and can have owners who're 
+
+    They can be active (acepting reports) or not, and can have owners who're
     notified about new reports.
 
     No authz is done right now; it's assumed that anyone with admin access
@@ -79,4 +79,3 @@ class Report(models.Model):
 
     def __str__(self):
         return self.title
-
