@@ -1,0 +1,11 @@
+schema_version: "1.0.0"
+name: bug-bounty
+metadata:
+  description: "A microsite for our bug bounty "
+  maintainers:
+    - jacob.kaplan-moss@gsa.gov
+components:
+dependencies:
+  systems:
+    - url: https://github.com/18F/cg-compliance
+      revision: master
