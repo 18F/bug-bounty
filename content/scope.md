@@ -56,12 +56,12 @@ be eligable for any rewards.
 - Denial-of-service attacks.
 - Bugs requiring phsyical access to machines or networks.
 - Version information disclosure.
-- Clickjacking on pre-authenticated pages, or the non-existence of X-Frame-Options, or other non-exploitable clickjacking issues.
+- Clickjacking on pre-authenticated pages, or the non-existence of `X-Frame-Options`, or other non-exploitable clickjacking issues.
 - Reports about Strict Transport Security (HSTS) headers
 - Reports about XSS mitigation headers (`X-Content-Type` and `X-XSS-Protection`)
 - Reports about `X-Content-Type-Options` headers
 - Reports about missing Content Security Policy (CSP) settings, or about CSP when set in report-only mode. Reports about misconfigured CSP on sites that are actually using it are in scope.
-- Out of date software versions
+- Out of date software versions (except where these lead to an in-scope vulnerability)
 - HTTP 404/500 pages that don't disclose sensitive information
 - Disclosure of known public files (e.g. `robots.txt`) or directories
 - CSRF on non-authenticated forms (such as contact forms)
