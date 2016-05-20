@@ -2,7 +2,7 @@ engines:
   duplication:
     enabled: true
     config:
-      language:
+      languages:
         - python
   fixme:
     enabled: true
