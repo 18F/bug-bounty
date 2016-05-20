@@ -17,6 +17,7 @@ class Target(models.Model):
     details = models.TextField(blank=True)
     owners = models.ManyToManyField(User, related_name='owned_bounty_targets')
     is_active = models.BooleanField(default=False)
+    slack_channel = models.TextField(blank=True, help_text="notifications about new reports will be posted to this channel.")
 
     def __str__(self):
         return self.name
