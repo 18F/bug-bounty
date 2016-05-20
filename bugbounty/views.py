@@ -4,6 +4,7 @@ from django.conf import settings
 from django.shortcuts import render, redirect
 from django.utils.safestring import mark_safe
 from .forms import ReportForm
+from .notifications import send_report_notification
 
 def index(request):
     context = {slug: _load_content(slug) for slug in ('rules', 'scope', 'faq')}
@@ -18,7 +19,8 @@ def _load_content(slug):
 def submit(request):
     form = ReportForm(request.POST or None)
     if form.is_valid():
-        form.save()
+        report = form.save()
+        send_report_notification(request, report)
         return redirect(thanks)
     return render(request, "bugbounty/submit.html", {'form': form})
 

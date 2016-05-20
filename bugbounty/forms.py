@@ -1,6 +1,5 @@
 import floppyforms.__future__ as forms
 from .models import Report, Target
-from .notifications import send_report_notification
 from django.core.mail import send_mail
 from django import template
 
@@ -22,8 +21,3 @@ class ReportForm(forms.ModelForm):
 
     # Only allow active targets to be reported against
     target = forms.ModelChoiceField(queryset=Target.objects.filter(is_active=True))
-
-    def save(self, *args, **kwargs):
-        report = super().save(*args, **kwargs)
-        send_report_notification(report)
-        return report

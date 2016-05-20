@@ -68,6 +68,5 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Email config
-if DEBUG:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Slack for notifications
+SLACK_INCOMING_WEBHOOK = os.environ.get('SLACK_INCOMING_WEBHOOK', None)
