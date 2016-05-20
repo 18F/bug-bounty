@@ -14,7 +14,7 @@ from django.conf import settings
 def send_report_notification(request, report):
     if getattr(settings, 'SLACK_INCOMING_WEBHOOK', None) is not None and report.target.slack_channel:
         report_link = request.build_absolute_uri(reverse('admin:bugbounty_report_change', args=(report.id,)))
-        report_text = "New report against {}\n<{}|Click here for details>".format(report.target.name, report_link) 
+        report_text = "New report against {}\n<{}|Click here for details>".format(report.target.name, report_link)
         payload = {
             "text": report_text,
             "username": "Bug Bounty Bot",
@@ -22,7 +22,7 @@ def send_report_notification(request, report):
             "channel": report.target.slack_channel
         }
         requests.post(
-            settings.SLACK_INCOMING_WEBHOOK, 
-            data = json.dumps(payload), 
+            settings.SLACK_INCOMING_WEBHOOK,
+            data = json.dumps(payload),
             headers = {'Content-type': 'application/json'}
         )
