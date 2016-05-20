@@ -6,3 +6,4 @@ whitenoise
 django-floppyforms
 markdown
 wsgi-basic-auth
+bleach
