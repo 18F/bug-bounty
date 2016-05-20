@@ -13,7 +13,7 @@ def _load_content(slug):
     content_file = os.path.join(settings.BASE_DIR, 'content', '{}.md'.format(slug))
     with open(content_file) as fp:
         html = markdown.markdown(fp.read(), otuput_format='html5')
-    return mark_save(html)  # nosec - we trust content in these files
+    return mark_safe(html)  # nosec - we trust content in these files
 
 def submit(request):
     form = ReportForm(request.POST or None)
