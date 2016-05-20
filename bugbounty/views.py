@@ -1,5 +1,4 @@
 import os
-import bleach
 import markdown
 from django.conf import settings
 from django.shortcuts import render, redirect
@@ -14,7 +13,7 @@ def _load_content(slug):
     content_file = os.path.join(settings.BASE_DIR, 'content', '{}.md'.format(slug))
     with open(content_file) as fp:
         html = markdown.markdown(fp.read(), otuput_format='html5')
-    return mark_safe(bleach.clean(html))  # nosec
+    return mark_save(html)  # nosec - we trust content in these files
 
 def submit(request):
     form = ReportForm(request.POST or None)

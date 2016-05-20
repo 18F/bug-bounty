@@ -1,9 +1,7 @@
-bleach==1.4.2
 dj-database-url==0.4.1
 Django==1.9.6
 django-enumfields==0.7.4
 django-floppyforms==1.6.2
-html5lib==0.9999999
 Markdown==2.6.6
 psycopg2==2.6.1
 six==1.10.0
