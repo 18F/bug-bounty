@@ -25,6 +25,7 @@ class ModelViewTests(django.test.TestCase):
         self.target = Target.objects.create(name="Test Target", is_active=True)
         self.target.owners.create(username='john', email='lennon@beatles.com')
 
+    @django.test.override_settings(SLACK_INCOMING_WEBHOOK=None)
     def test_submit(self):
         data = {
             "reporter_name": "George Harrison",
