@@ -1,0 +1,67 @@
+---
+name: bug-bounty
+uniqueID: FIXME
+version: alpha
+phase: alpha
+information-types: 
+- D26 Civilian Operations
+
+# https://pages.18f.gov/before-you-ship/ato/levels/
+confidentiality: moderate
+integrity: low
+availability: low
+security-baseline: low
+
+# FIXME: is this "minor" or "major"?
+system-type: minor
+level-of-identity-assurance: FIXME: GITHUB/MYUSA
+staff:
+  authorizing-official:
+    name: Aaron Snow
+    title: 18F Executive Director
+    org: General Services Administration
+    unit: 18F
+    email: 18F@gsa.gov
+  system-owner:
+    name: Noah Kunin
+    title: 18F Infrastructure Director
+    org: General Services Administration
+    unit: 18F
+    email: devops@gsa.gov
+  system-management:
+    name: Noah Kunin
+    title: 18F Infrastructure Director
+    org: General Services Administration
+    unit: 18F
+    email: devops@gsa.gov
+  system-security-officer:
+    name: Noah Kunin
+    title: 18F Infrastructure Director
+    org: General Services Administration
+    unit: 18F
+    email: devops@gsa.gov
+  technical-lead:
+    name: Jacob Kaplan-Moss
+    title: Technical Lead
+    org: General Services Administration
+    unit: 18F
+    email: jacob.kaplan-moss@gsa.gov
+leveraged-authorizations:
+- https://www.fedramp.gov/marketplace/compliant-systems/amazon-web-services-aws-eastwest-us-public-cloud/
+purpose: https://github.com/18F/bug-bounty/blob/master/README.md
+components:
+- https://github.com/18F/bug-bounty/blob/master/requirements.txt
+
+system-diagram: FIXME
+network-diagram: FIXME
+
+environments:
+- Cloud Foundry
+- Amazon Web Services East
+user-types:
+  developer:
+    functions:
+    - deployment
+    - engineering
+controls:
+- FIXME WHAT GOES HERE?
