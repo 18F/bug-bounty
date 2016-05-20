@@ -1,0 +1,16 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      language:
+        - python
+  fixme:
+    enabled: true
+  radon:
+    enabled: true
+  markdownlint:
+    enabled: true
+
+ratings:
+  paths:
+    - "**.py"
