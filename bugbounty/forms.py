@@ -1,5 +1,6 @@
 import floppyforms.__future__ as forms
 from .models import Report, Target
+from .notifications import send_report_notification
 from django.core.mail import send_mail
 from django import template
 
@@ -24,19 +25,5 @@ class ReportForm(forms.ModelForm):
 
     def save(self, *args, **kwargs):
         report = super().save(*args, **kwargs)
-
-        t = template.loader.get_template('bugbounty/new-report-email.txt')
-        c = template.Context({'report': report})
-        mail_message = t.render(c)
-
-        send_mail(
-            subject = "[Bug Bounty] New report against {}".format(report.target.name),
-            message = mail_message,
-            recipient_list = [o.email for o in report.target.owners.all()],
-
-            # FIXME - I'm not sure if this actually does what I want.
-            # Need to verify that it does and that it works.
-            from_email = report.reporter_email,
-        )
-
+        send_report_notification(report)
         return report

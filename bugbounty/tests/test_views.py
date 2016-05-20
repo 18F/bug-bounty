@@ -39,7 +39,3 @@ class ModelViewTests(django.test.TestCase):
 
         report = Report.objects.get(reporter_email=data['reporter_email'])
         assert report.title == data['title']
-
-        assert len(mail.outbox) == 1
-        assert mail.outbox[0].subject == '[Bug Bounty] New report against Test Target'
-        assert mail.outbox[0].to == [o.email for o in self.target.owners.all()]
