@@ -1,5 +1,5 @@
 from functools import partial
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 from . import views
 
@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^project-instructions/$',
         partial(views.page, slug='project-instructions'),
         name="bounty-project-instructions"),
+    url('', include('social.apps.django_app.urls', namespace='social')),
 ]

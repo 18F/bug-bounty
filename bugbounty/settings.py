@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'floppyforms',
+    'social.apps.django_app.default',
     'bugbounty',
 ]
 
@@ -45,6 +46,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social.apps.django_app.context_processors.backends',
+                'social.apps.django_app.context_processors.login_redirect',
             ],
         },
     },
@@ -70,3 +73,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Slack for notifications
 SLACK_INCOMING_WEBHOOK = os.environ.get('SLACK_INCOMING_WEBHOOK', None)
+
+# python-social-auth config - use github
+AUTHENTICATION_BACKENDS = (
+    'social.backends.github.GithubOrganizationOAuth2'
+    'django.contrib.auth.backends.ModelBackend',
+)
