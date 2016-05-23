@@ -79,3 +79,6 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.github.GithubOrganizationOAuth2'
     'django.contrib.auth.backends.ModelBackend',
 )
+SOCIAL_AUTH_GITHUB_ORG_KEY = os.environ.get('GITHUB_KEY', None)
+SOCIAL_AUTH_GITHUB_ORG_SECRET = os.environ.get('GITHUB_SECRET', None)
+SOCIAL_AUTH_GITHUB_ORG_NAME = '18F'
