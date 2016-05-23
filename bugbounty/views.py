@@ -7,7 +7,7 @@ from .forms import ReportForm
 from .notifications import send_report_notification
 
 def index(request):
-    context = {slug: _load_content(slug) for slug in ('rules', 'scope', 'faq')}
+    context = {slug: _load_content(slug) for slug in ('rules', 'scope')}
     return render(request, "bugbounty/index.html", context)
 
 def _load_content(slug):
