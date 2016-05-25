@@ -76,7 +76,7 @@ SLACK_INCOMING_WEBHOOK = os.environ.get('SLACK_INCOMING_WEBHOOK', None)
 
 # python-social-auth config - use github
 AUTHENTICATION_BACKENDS = (
-    'social.backends.github.GithubOrganizationOAuth2'
+    'social.backends.github.GithubOrganizationOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 )
 SOCIAL_AUTH_GITHUB_ORG_KEY = os.environ.get('GITHUB_KEY', None)
