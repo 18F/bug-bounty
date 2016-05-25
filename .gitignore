@@ -2,6 +2,7 @@
 .cache
 .coverage
 .env
+.tox
 __pycache__
 htmlcov/
 staticfiles

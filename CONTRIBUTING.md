@@ -11,8 +11,8 @@ If you have any questions or want to read more, check out the [18F Open Source P
 ## How to run tests
 
 ```bash
-$ pip install -r dev-requirements.txt
-$ py.test
+$ pip install tox
+$ tox
 ```
 
 ## Public domain
