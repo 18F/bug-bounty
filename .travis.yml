@@ -1,17 +1,6 @@
+sudo: false
 language: python
 python:
-- '3.5'
-install:
-- pip install -r requirements.txt
-- pip install -r dev-requirements.txt
-- pip install codeclimate-test-reporter
-- pip install bandit
-- python manage.py collectstatic --no-input
-script: 
-  - bandit -r .
-  - py.test
-  - codeclimate-test-reporter
-cache: pip
-env:
-  global:
-    secure: Vs/fLGVFRKgvDQUOJAlve/9uzkTXI+wTMpSQRYIOdML9WiCjNK6/3wLU1OqiykzvMkiDLZKvl5N24PQFEhkH8vR3MW3u+fotGyQeWlKVIyRWM3SIotHNvxxEuJrDi75feEQVagyV/SHKcdXb2nog7HF/cqDGHKhwqXc6MIM/bwsnUK62PZoXZiKFfHs+aLqKq7bTULwBVM+rb1lOa4w67XY69DL8lrodug4ByIcmRBsSurbb48DP4dvTP93csgcjgq76KhkdfhBHSJ4PONja7QWSCZHW5dWFJjgIMdQwBLttN8MdpLeWalhXKOFYaSAuL4H3+L45PtxOL/ZL/M/rMkEON1pUx6n87lJvQpkX/LZwXg6qrD7gfaILsy46P44sLe5fdGM7PgX8vhOuEx0xDiGCav0mZFLAO2nYm5viNdp13bixek/Vn/S+ig6Oi95q1x7hS7sRcJ88qO/Iy7ZAuoe6pfYfIfpwTWwyMAlayP9NOBcjEquJbmO95zYGSdlgKtshS+BAPOS7K+7NNDkLz+MPCvIDsnL8I/Ibl4IedLMYxAMVg7WPLEKTqUX9DcpDzj9HYoP2XWwpIMoyB9eRrUkoNhHSjCm4uMyUn15D/TB87fVbq3kqSMtPiNGP94gXPf/KWWpR7OwFAoO1Qk5v7r1rdZfeUqI0JRqnietspaE=
+  - "3.5"
+install: pip install tox-travis
+script: tox

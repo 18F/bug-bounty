@@ -2,8 +2,7 @@
 
 ### The following sites are in-scope for this bounty:
 
-- `example1.example.gov`
-- `example2.example.gov`
+**Nothing - the program hasn't begun yet.**
 
 Remember, you may only look for vulnerabilities in sites listed above; anything
 else is out of scope. Submissions covering other domains/apps are not
@@ -20,6 +19,8 @@ significant effort.
 
 #### Tier 1: High Severity - $3,500
 
+Vulnerabilities typically classified as High severity include:
+
 - SQL injection
 - Remote Code Execution
 - Site-wide authentication bypass
@@ -28,6 +29,8 @@ significant effort.
 
 #### Tier 2: Medium Severity - $1,000
 
+Vulnerabilities typically classified as Medium severity include:
+
 - XSS on critical actions
 - CSRF on critical functions such as admin or superuser actions
 - Significant authentication bypass or elevation of privilege
@@ -35,11 +38,14 @@ significant effort.
 
 #### Tier 3: Low Severity - $500
 
+Vulnerabilities typically classified as Low severity include:
+
 - All other XSS/CSRF not excluded below
 - Server misconfiguration / provisioning errors
 - Information leaks other than personal information
 - SSL configuration issues, including mixed content issues
 - Open redirects
+- Anything else not excluded (see below) 
 
 ### What doesn't qualify?
 

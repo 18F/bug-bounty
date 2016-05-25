@@ -1,7 +1,5 @@
 import floppyforms.__future__ as forms
 from .models import Report, Target
-from django.core.mail import send_mail
-from django import template
 
 class ReportForm(forms.ModelForm):
     class Meta:

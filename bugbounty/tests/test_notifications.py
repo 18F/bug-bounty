@@ -1,4 +1,3 @@
-import json
 import pytest
 import httpretty
 from bugbounty import notifications

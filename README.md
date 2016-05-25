@@ -1,10 +1,10 @@
 # 18F Bug Bounty website
 
 [![Build Status](https://travis-ci.org/18F/bug-bounty.svg?branch=master)](https://travis-ci.org/18F/bug-bounty)
-[![Code Climate](https://codeclimate.com/github/18F/bug-bounty/badges/gpa.svg)](https://codeclimate.com/github/18F/bug-bounty)
-[![Test Coverage](https://codeclimate.com/github/18F/bug-bounty/badges/coverage.svg)](https://codeclimate.com/github/18F/bug-bounty/coverage)
 
-**Work in progress**. We're working on it, but we're not accepting bug bounty submissions yet. Please do not submit them here, or anywhere, until this gets officially launched!
+**Work in progress** submission application for a bug bounty program on **18F systems only**. This is not a GSA-wide or government-wide program. 
+
+We're working on it, but we're not accepting bug bounty submissions yet. Please do not submit them here, or anywhere, until this gets officially launched!
 
 ### Public domain
 

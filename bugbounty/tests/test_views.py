@@ -1,8 +1,8 @@
 import django.test
-from django.core import mail
 from django.core.urlresolvers import reverse
 from bugbounty.models import Report, Target
 
+@django.test.override_settings(STATICFILES_STORAGE='django.contrib.staticfiles.storage.StaticFilesStorage')
 class SimpleViewTests(django.test.SimpleTestCase):
     """Tests for views that don't require a DB."""
 
@@ -18,6 +18,7 @@ class SimpleViewTests(django.test.SimpleTestCase):
         r = self.client.get(reverse('bounty-project-instructions'))
         assert r.status_code == 200
 
+@django.test.override_settings(STATICFILES_STORAGE='django.contrib.staticfiles.storage.StaticFilesStorage')
 class ModelViewTests(django.test.TestCase):
     """Tests for views that do require a DB."""
 
