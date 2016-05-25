@@ -1,5 +1,4 @@
 import django.test
-from django.core import mail
 from django.core.urlresolvers import reverse
 from bugbounty.models import Report, Target
 
