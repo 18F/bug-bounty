@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'floppyforms',
+    'social.apps.django_app.default',
     'bugbounty',
 ]
 
@@ -45,6 +46,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social.apps.django_app.context_processors.backends',
+                'social.apps.django_app.context_processors.login_redirect',
             ],
         },
     },
@@ -70,3 +73,21 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Slack for notifications
 SLACK_INCOMING_WEBHOOK = os.environ.get('SLACK_INCOMING_WEBHOOK', None)
+
+# python-social-auth config - use github
+AUTHENTICATION_BACKENDS = (
+    'social.backends.github.GithubTeamOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+SOCIAL_AUTH_GITHUB_TEAM_KEY = os.environ.get('GITHUB_KEY', None)
+SOCIAL_AUTH_GITHUB_TEAM_SECRET = os.environ.get('GITHUB_SECRET', None)
+
+# The team ID doesn't seem to be easy to find on the web anywhere, so I
+# ended up using the API to find it. Using github3.py, I did this::
+#       gh = github3.login(...)
+#       next(t for t in gh.organization('18f').teams() if t.name == '18F').id
+SOCIAL_AUTH_GITHUB_TEAM_ID = os.environ.get('GITHUB_TEAM_ID', None)
+
+# This isn't documented, but GithubTeamOAuth2 needs the read:org permission
+# to be able to tell if you're in the given team.
+SOCIAL_AUTH_GITHUB_TEAM_SCOPE = ['read:org']

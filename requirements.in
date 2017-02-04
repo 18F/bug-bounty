@@ -7,3 +7,4 @@ django-floppyforms
 markdown
 wsgi-basic-auth
 requests
+python-social-auth
