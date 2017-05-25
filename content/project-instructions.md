@@ -5,38 +5,43 @@ researchers, and everyone that depends on our software.
 
 ### Vulnerability Maturity Model
 
-Our partner, HackerOne, has [a maturity model for vulnerability coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity-model).  It
-is not strictly necessary that your project have expert-level maturity in every
-capability to participate, but in general, more maturity is better.
+Our partner, HackerOne, has [a maturity model for vulnerability
+coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity-model).
+To guarantee that your project's participation in the bug bounty program is a
+success, we expect you to be willing to have:
 
-__Organizational__: How does your project respond to vulnerability reports?
-* Basic: Executive support to respond to reports.
-* Advanced: Defined policies/processes/etc. for responding to reports.
-* Expert: Dedicated staff for responding to reports.
+* Staff dedicated, on a possibly rotating basis, to responding to vulnerability
+reports. The staff need not be security experts, but for availability, you must
+have two or more staff dedicated to responding and they must be reachable by a 
+[Slack User Group](https://handbook.18f.gov/slack/#groups).
 
-__Engineering__: How does your project manage vulnerabilities?
-* Basic: All bugs are tracked to resolution.
-* Advanced: Security bugs are tracked to resolution, deferral, or acceptance.
-* Expert: Security bug classes are tracked.
+* A private GitHub repo for tracking vulnerability reports to resolution.  It
+need not be an [issues-only
+repo](https://help.github.com/articles/creating-an-issues-only-repository/) but
+it must be private.  Issues must track both vulnerability instances and
+vulnerability classes; a reported cross-site scripting vulnerability must also
+be tracked as a separate issue to find and fix all other cross-site scripting
+vulnerabilities, and when found must also be tracked separately.
 
-__Communications__: How does your project communicate about its vulnerabilities?
-* Basic: You have a channel to distribute advisories to impacted parties.
-* Advanced: You have tailored channels for each of your audiences.
-* Expert: You have an information sharing program to coordinate disclosure.
+* Methods to inform parties impacted by a reported vulnerability, which will
+depend on the nature your project.  For example, if your project is an
+interactive service, this could be a notice on the front page; if your project
+is a code library, this could be an update to the release notes.  If your
+project features both or more, you must be able to inform each of your
+audiences.
 
-__Analytics__: How does your project improve its security?
-* Basic: Bug tracking data is used to measure code quality over time.
-* Advanced: Automated development practices eliminate security bug classes.
-* Expert: Instrumentation captures exploit attempts and triggers mitigation.
+* Automated development practices that mitigate classes of vulnerabilities.  For
+example, your project uses a framework that automatically escapes output so that
+input doesn't have to be manually escaped, or your project automatically fuzzes
+all commits before deploying to production.
 
-__Incentives__: How does your project encourage engagement?
-* Basic: Clear legal statement that protects researchers who report bugs.
-* Advanced: Financial rewards.
-* Expert: Financial rewards tailored to your project's vulnerability market.
+* Enrolled in the [18F Vulnerability Disclosure
+Policy](https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md).
 
 In a nutshell, projects will have bugs reported to them, and their ability to
 deal with them gracefully will be the key to success.  Your project needs to be
-mature enough to address any reported issues in a reasonable amount of time.
+mature enough to address any reported issues in a reasonable amount of time, and
+to ensure that it isn't having the same kind of issues reported over time. 
 18F's Bug Bounty Team is here to provide assistance, but not oversight!  Your
 project will own all the responsibilities, from making sure the reports get a
 response, to making sure the incentives are properly aligned.
