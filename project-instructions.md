@@ -17,7 +17,7 @@ coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity
 It's worth reviewing this model and thinking about where you fit in; in general,
 we'll prefer more mature programs to less.
 
-### Requirements to join
+### Requirements To Join
 
 To guarantee that your project's participation in the bug bounty program is a
 success, we expect you to be willing to have:
@@ -67,7 +67,7 @@ to ensure that it isn't having the same kind of issues reported over time.
 project will own all the responsibilities, from making sure the reports get a
 response, to making sure the incentives are properly aligned.
 
-### SLAs your program much meet
+### SLAs Your Program Must Meet
 
 Projects that participate in the bug bounty program inherit a SLA.  Issues must
 be **resolved within 90 days** of being reported. Ideally this means "fixed" but
@@ -113,7 +113,7 @@ others depending on the scope of the bug.  Communications is complete once all
 of the impacted parties have been informed of the steps you've taken to resolve
 the bug, and any additional steps they may need to take in response.
 
-#### Time Commitment and billing
+#### Time Commitment And Billing
 
 Time spent on those bug bounty tasks should be Tocked as `FIXME / Bug Bounty`,
 but time spent on actually resolving the issues should be Tocked to the project 
