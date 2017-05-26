@@ -1,4 +1,0 @@
----
-buildpack: python_buildpack
-applications:
-- name: bug-bounty
