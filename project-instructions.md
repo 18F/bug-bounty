@@ -122,7 +122,7 @@ the bug, and any additional steps they may need to take in response.
 
 #### Time Commitment And Billing
 
-Time spent on those bug bounty tasks should be Tocked as `FIXME / Bug Bounty`,
+Time spent on those bug bounty tasks should be Tocked as `411 - TTS Acq / Customer Acq / Bug Bounty`,
 but time spent on actually resolving the issues should be Tocked to the project
 itself. Expect to spend on the order of 4-8 hours a week on bounty management
 tasks. If at any point you're spending more, that might indicate something is
