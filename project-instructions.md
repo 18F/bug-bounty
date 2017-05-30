@@ -28,8 +28,7 @@ for availability, you must have two or more staff dedicated to responding and
 they must be reachable by a [Slack User Group](https://handbook.18f.gov/slack/#groups).
 
 * **A private GitHub repo for tracking vulnerability reports to resolution.** It
-could be an [issues-only repo](https://help.github.com/articles/creating-an-
-issues-only-repository/), or a full code repository, *but it must be private.*
+could be an [issues-only repo](https://help.github.com/articles/creating-an-issues-only-repository/), or a full code repository, *but it must be private.*
 We'll ask you to track both individual vulnerabilities *and* more general
 vulnerability classes -- for example a reported cross-site scripting
 vulnerability must also generate a separate issue to find and fix all other
