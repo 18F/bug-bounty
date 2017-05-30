@@ -22,12 +22,12 @@ we'll prefer more mature programs to less.
 To guarantee that your project's participation in the bug bounty program is a
 success, we expect you to be willing to have:
 
-* Staff dedicated, on a possibly rotating basis, to responding to vulnerability
+* **Dedicated staff**, on a possibly rotating basis, to responding to vulnerability
 reports and fixing reported issues. The staff need not be security experts, but
 for availability, you must have two or more staff dedicated to responding and
 they must be reachable by a [Slack User Group](https://handbook.18f.gov/slack/#groups).
 
-* A private GitHub repo for tracking vulnerability reports to resolution. It
+* **A private GitHub repo for tracking vulnerability reports to resolution.** It
 could be an [issues-only repo](https://help.github.com/articles/creating-an-
 issues-only-repository/), or a full code repository, *but it must be private.*
 We'll ask you to track both individual vulnerabilities *and* more general
@@ -36,7 +36,7 @@ vulnerability must also generate a separate issue to find and fix all other
 related cross-site scripting vulnerabilities, and when found must also be
 tracked separately.
 
-* Methods to inform parties impacted by a reported vulnerability, which will
+* **Methods to inform parties impacted by a reported vulnerability**, which will
 depend on the nature of your project. For example, if your project is an
 interactive service, this could be a notice on the front page; if your project
 is a code library, this could be an update to the release notes. If your
@@ -49,17 +49,17 @@ automatically escapes output so that input doesn't have to be manually escaped.
 In other words, we'll want you to be confident that you've already covered
 the "low hanging fruit".
 
-* Be listed in in the [18F Vulnerability Disclosure
-Policy](https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md) scope. We can add you as part of your
+* **Be listed in in the [18F Vulnerability Disclosure
+Policy](https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md)**. We can add you as part of your
 onboarding to the program, but you'll need to be OK to be listed. Note that
 this probably rules out any apps developed for partners, since we can't
 unilaterally take vulnerability reports for other agencies.
 
-* Sufficient funding and staffing for at least three months of participation
+* **Sufficient funding and staffing for at least three months** (and preferably nine months) of participation
 in the program. We want you to be able to guarantee you can fix any reported
 issues!
 
-* Be comfortable with a fully-public bounty. Our intent is for these bounties
+* **Be comfortable with a fully-public bounty.** Our intent is for these bounties
 to be fully-public (that is, open to any researcher on HackerOne's platform).
 If you want, we can _start_ with a private, invite-only bounty (where
 HackerOne selects and invites a few highly-qualified researchers), but only
