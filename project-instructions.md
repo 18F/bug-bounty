@@ -10,7 +10,7 @@ rules designed to set you up for success.
 Please note that at the moment, we only have space in the program for **five**
 apps. So we may need to turn down some qualified programs. Sorry!
 
-### Vulnerability Maturity Model
+### How we'll select: HackerOne's Vulnerability Maturity Model
 
 Our partner, HackerOne, has [a maturity model for vulnerability
 coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity-model).
@@ -58,6 +58,12 @@ unilaterally take vulnerability reports for other agencies.
 * Sufficient funding and staffing for at least three months of participation
 in the program. We want you to be able to guarantee you can fix any reported
 issues!
+
+* Be comfortable with a fully-public bounty. Our intent is for these bounties
+to be fully-public (that is, open to any researcher on HackerOne's platform).
+If you want, we can _start_ with a private, invite-only bounty (where
+HackerOne selects and invites a few highly-qualified researchers), but only
+as a stepping stone towards a fully-public bounty.
 
 In a nutshell, projects will have bugs reported to them, and their ability to
 deal with them gracefully will be the key to success.
