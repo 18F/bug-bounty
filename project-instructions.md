@@ -10,12 +10,13 @@ rules designed to set you up for success.
 Please note that at the moment, we only have space in the program for **five**
 apps. So we may need to turn down some qualified programs. Sorry!
 
-### How we'll select: HackerOne's Vulnerability Maturity Model
+### How we'll prioritize among potential participants
 
-Our partner, HackerOne, has [a maturity model for vulnerability
-coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity-model).
-It's worth reviewing this model and thinking about where you fit in; in general,
-we'll prefer more mature programs to less.
+If we get more than five interested programs, we'll select for more mature
+programs. HOur partner, HackerOne, has [a maturity model for vulnerability
+coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity-model)
+that we'll use to define "mature" for these purposes. It may be worth reviewing 
+this model and thinking about where you fit in.
 
 ### Requirements To Join
 
@@ -55,9 +56,9 @@ onboarding to the program, but you'll need to be OK to be listed. Note that
 this probably rules out any apps developed for partners, since we can't
 unilaterally take vulnerability reports for other agencies.
 
-* **Sufficient funding and staffing for at least three months** (and preferably nine months) of participation
-in the program. We want you to be able to guarantee you can fix any reported
-issues!
+* **Sufficient funding and staffing for at least three months** (and preferably
+nine months) of participation in the program. We want you to be able to
+guarantee you can fix any reported issues!
 
 * **Be comfortable with a fully-public bounty.** Our intent is for these bounties
 to be fully-public (that is, open to any researcher on HackerOne's platform).
@@ -69,10 +70,11 @@ In a nutshell, projects will have bugs reported to them, and their ability to
 deal with them gracefully will be the key to success.
 
 Your project needs to be mature enough to address any reported issues in a
-reasonable amount of time, and to ensure that it isn't having the same kind of issues reported over time. 18F's Bug Bounty Team is here to provide assistance,
-but not oversight! Your project will own all the responsibilities, from
-making sure the reports get a response, to making sure the incentives are
-properly aligned.
+reasonable amount of time, and to ensure that it isn't having the same kind of
+issues reported over time. 18F's Bug Bounty Team is here to provide assistance,
+but not oversight! Your project will own all the responsibilities, from making
+sure the reports get a response, to making sure the incentives are properly
+aligned.
 
 ### SLAs Your Program Must Meet
 
@@ -124,7 +126,12 @@ the bug, and any additional steps they may need to take in response.
 
 Time spent on those bug bounty tasks should be Tocked as `411 - TTS Acq / Customer Acq / Bug Bounty`,
 but time spent on actually resolving the issues should be Tocked to the project
-itself. Expect to spend on the order of 4-8 hours a week on bounty management
+itself. In other words: if you're doing work that you would have done if
+_your team_ had discovered the bug, Tock it to your own project as usual.
+But if it's work you have to do specifically because the bounty program found
+the bug, Tock it to Bug Bounty.
+
+Expect to spend on the order of 4-8 hours a week on bounty management
 tasks. If at any point you're spending more, that might indicate something is
 wrong and you should let the bug bounty team know.
 
