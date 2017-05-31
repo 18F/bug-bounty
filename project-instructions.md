@@ -13,7 +13,7 @@ apps. So we may need to turn down some qualified programs. Sorry!
 ### How we'll prioritize among potential participants
 
 If we get more than five interested programs, we'll select for more mature
-programs. HOur partner, HackerOne, has [a maturity model for vulnerability
+programs. Our partner, HackerOne, has [a maturity model for vulnerability
 coordination](https://www.hackerone.com/blog/vulnerability-coordination-maturity-model)
 that we'll use to define "mature" for these purposes. It may be worth reviewing 
 this model and thinking about where you fit in.
@@ -29,7 +29,8 @@ for availability, you must have two or more staff dedicated to responding and
 they must be reachable by a [Slack User Group](https://handbook.18f.gov/slack/#groups).
 
 * **A private GitHub repo for tracking vulnerability reports to resolution.** It
-could be an [issues-only repo](https://help.github.com/articles/creating-an-issues-only-repository/), or a full code repository, *but it must be private.*
+could be an [issues-only repo](https://help.github.com/articles/creating-an-issues-only-repository/), or a full code repository, *but it must be private.* You may use the [security-incidents](https://github.com/18F/security-incidents)
+repo if you don't have a project-specific one.
 We'll ask you to track both individual vulnerabilities *and* more general
 vulnerability classes -- for example a reported cross-site scripting
 vulnerability must also generate a separate issue to find and fix all other
