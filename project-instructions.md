@@ -96,15 +96,18 @@ closer to the SLA.
 Regardless of what level of maturity your project has, you can expect the
 following tasks to come your way:
 
-* __Triage__: As issues are reported, you'll need to review the reports to
-qualify them. Some may contain all the information you need, others may be
-lacking and require follow-up. Some will be serious, others may be invalid.
-Some of the serious ones may qualify as a
-[security incident](https://handbook.18f.gov/security-incidents/). Sometimes
-you may see duplicates, serious or invalid. In any case, we recommend you
-triage issues within a week, if not daily. Triaging is complete when you have
-enough information from the reporter to implement a fix and assign it a
-priority, or enough information to dismiss it as not a bug.
+* __Validation__: As issues are reported, you'll need to review the reports to
+validate them. HackerOne will be performing initial triage to reproduce the
+issue and assign a severity. While they strive for accuracy, you know your
+application best and you play a critical role in final validation of the issue.
+Some may contain all the information you need, others may be lacking and require
+follow-up. Some will be serious, others may be invalid.  Some of the serious
+ones may qualify as a [security
+incident](https://handbook.18f.gov/security-incidents/). Sometimes you may see
+duplicates, serious or invalid. In any case, we recommend you validate issues
+within a week, if not daily. Validation is complete when you have enough
+information from the reporter to implement a fix and assign it a priority, or
+enough information to dismiss it as not a bug.
 
 * __Tracking__: Once you've qualified a report as a vulnerability, you'll
 need to track it to its conclusion. This is especially important for
