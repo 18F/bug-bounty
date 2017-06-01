@@ -78,14 +78,22 @@ aligned.
 
 ### SLAs Your Program Must Meet
 
-Projects that participate in the bug bounty program inherit a SLA. Issues must
-be **resolved within 90 days** of being reported. Ideally this means "fixed" but
-note that "resolved" for the purposes of the bug bounty program could mean
-something else. For example, vulnerabilities that you determine will not be
-fixed within 90 days can be resolved by paying the reporter and communicating
-your plan. Also note that bug bounty resolution is entirely separate from any
-federal policy and compliance with one does not confer compliance with the
-other.
+Projects that participate in the bug bounty program inherit a SLA: **Issues must
+be resolved within 90 (calendar) days of being reported.** Additionally, we 
+recommend that you aim to resolve more severe issues more quickly:
+
+* High severity: 7 days
+* Medium severity: 30 days
+* Low severity: 90 days
+
+These are recommendations, but the 90-day SLA is a hard requirement. 
+
+Ideally "resolved" means "fixed" but note that "resolved" for the purposes of 
+the bug bounty program could mean something else. For example, vulnerabilities
+that you determine will not be fixed within 90 days can be resolved by paying 
+the reporter and communicating your plan. Also note that bug bounty resolution
+is entirely separate from any federal policy and compliance with one does not
+confer compliance with the other.
 
 The Bug Bounty Team will notify you about unresolved reports on every half-life
 (i.e. Day 45, 22, 11, 5, 3, 2, and 1) to help you track issues as they get
