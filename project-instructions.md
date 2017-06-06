@@ -79,14 +79,7 @@ aligned.
 ### SLAs Your Program Must Meet
 
 Projects that participate in the bug bounty program inherit a SLA: **Issues must
-be resolved within 90 (calendar) days of being reported.** Additionally, we 
-recommend that you aim to resolve more severe issues more quickly:
-
-* High severity: 7 days
-* Medium severity: 30 days
-* Low severity: 90 days
-
-These are recommendations, but the 90-day SLA is a hard requirement. 
+be resolved within 90 (calendar) days of being reported.** 
 
 Ideally "resolved" means "fixed" but note that "resolved" for the purposes of 
 the bug bounty program could mean something else. For example, vulnerabilities
@@ -95,9 +88,34 @@ the reporter and communicating your plan. Also note that bug bounty resolution
 is entirely separate from any federal policy and compliance with one does not
 confer compliance with the other.
 
+If you miss this SLA, that'll prompt a review of the SLA and your involvement
+with the bug bounty team. This review will do a few things:
+
+1. Review this 90-day SLA with you and make sure that it is still aligned with
+   everyone's goals. It is entirely possible that it might not be. The real
+   world is complicated; the SLA may be an over-simplification.
+
+2. Conduct a retrospective with the team that missed the SLA  to determine if
+   the reason for missing the SLA and how to avoid it in the future. If we can't
+   make changes to meet the SLA in the future, then participation in the bug
+   bounty would be put on hold.
+
 The Bug Bounty Team will notify you about unresolved reports on every half-life
 (i.e. Day 45, 22, 11, 5, 3, 2, and 1) to help you track issues as they get
 closer to the SLA.
+
+#### Suggested timelines
+
+Though the 90-day SLA above is the only _required_ timeline, we do (strongly)
+suggest that your program aim for faster remediation of more severe issues:
+
+* High severity: within 7 days
+* Medium severity: within 30 days
+
+If you miss these timelines, it should prompt you to deliver an update to
+stakeholders, and to review the issue and decide whether it is appropriately
+ranked. If you consistently can't meet these timelines, that should prompt
+a conversation with the bug bounty team about why this is happening.
 
 #### Your Project's Participation
 
