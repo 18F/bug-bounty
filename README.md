@@ -2,7 +2,7 @@
 
 Internal documentation for TTS's bug bounty.
 
-**We're not accepting bug bounty submissions yet. Please do not submit them here, or anywhere, until this gets officially launched!**
+**Please [report bugs over on HackerOne](https://hackerone.com/tts); not in this repository!** This repo is for policy docs only.
 
 ### Public domain
 
