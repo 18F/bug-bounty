@@ -27,3 +27,13 @@ Thanks again, we really appreciate your work and your report!
 
 {signature}
 ```
+
+## Out of scope
+
+```
+Thanks for your report, we appreciate your effort.
+
+However, this domain isn't in scope for Vulnerability Disclosure Policy (see https://hackerone.com/tts, and https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md). In the future, please limit your testing to domains explicitly listed in that scope. This is for your own safety: we want to be sure that everyone's on the same page about your activities being authorized.
+
+If possible, we'll make an effort to pass this on to the appropriate parties, but we can't guarantee any further follow-up.
+```
