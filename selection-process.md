@@ -33,7 +33,7 @@ Here's what we did to fill the other slots:
     reported.
   - Clear and committed project managers/leads who we trust to prioritize
     security issues appropriately.
-  - Programs that are relatively mature according the Hacker One's maturity
+  - Programs that are relatively mature according to HackerOne's maturity
     model (looking for roughly "medium" or better in most categories).
 
 - Submitted those programs to an informal call for consensus among the bug
