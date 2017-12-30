@@ -78,13 +78,13 @@ aligned.
 
 ### SLAs Your Program Must Meet
 
-Projects that participate in the bug bounty program inherit a SLA: **Issues must
+Projects that participate in the bug bounty program inherit an SLA: **Issues must
 be resolved within 90 (calendar) days of being reported.** 
 
 Ideally "resolved" means "fixed" but note that "resolved" for the purposes of 
 the bug bounty program could mean something else. For example, vulnerabilities
 that you determine will not be fixed within 90 days can be resolved by paying 
-the reporter and communicating your plan. Also note that bug bounty resolution
+the reporter and communicating your plan. Also, note that bug bounty resolution
 is entirely separate from any federal policy and compliance with one does not
 confer compliance with the other.
 
@@ -107,13 +107,13 @@ closer to the SLA.
 #### Suggested timelines
 
 Though the 90-day SLA above is the only _required_ timeline, we do (strongly)
-suggest that your program aim for faster remediation of more severe issues:
+suggest that your program aims for faster remediation of more severe issues:
 
 * High severity: within 7 days
 * Medium severity: within 30 days
 
 If you miss these timelines, it should prompt you to deliver an update to
-stakeholders, and to review the issue and decide whether it is appropriately
+stakeholders and to review the issue and decide whether it is appropriately
 ranked. If you consistently can't meet these timelines, that should prompt
 a conversation with the bug bounty team about why this is happening.
 
@@ -125,7 +125,7 @@ following tasks to come your way:
 * __Validation__: As issues are reported, you'll need to review the reports to
 validate them. HackerOne will be performing initial triage to reproduce the
 issue and assign a severity. While they strive for accuracy, you know your
-application best and you play a critical role in final validation of the issue.
+application best and you play a critical role in the final validation of the issue.
 Some may contain all the information you need, others may be lacking and require
 follow-up. Some will be serious, others may be invalid.  Some of the serious
 ones may qualify as a [security
@@ -143,7 +143,7 @@ record of the decisions that were made leading up to the resolution, deferral,
 or acceptance of the bug.
 
 * __Communication__: Reporters expect updates on the issues they've
-reported. Usually nothing more at the beginning than "thanks we got it, expect a
+reported. Usually, nothing more at the beginning than "thanks we got it, expect a
 fix $whenever", and then "ok it's fixed!" at the end. If something changes
 while the vulnerability is still open, though, you should communicate that to
 the reporter. You may also have to communicate with customers, partners, and
