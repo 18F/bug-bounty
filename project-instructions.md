@@ -26,7 +26,8 @@ success, we expect you to be willing to have:
 * **Dedicated staff**, on a possibly rotating basis, to responding to vulnerability
 reports and fixing reported issues. The staff need not be security experts, but
 for availability, you must have two or more staff dedicated to responding and
-they must be reachable by a [Slack User Group](https://handbook.18f.gov/slack/#groups).
+they must be reachable through
+[#bug-bounty-partners](https://gsa-tts.slack.com/messages/C5JQCD9PH).
 
 * **A private GitHub repo for tracking vulnerability reports to resolution.** It
 could be an [issues-only repo](https://help.github.com/articles/creating-an-issues-only-repository/), or a full code repository, *but it must be private.* You may use the [security-incidents](https://github.com/18F/security-incidents)
