@@ -52,7 +52,7 @@ In other words, we'll want you to be confident that you've already covered
 the "low hanging fruit".
 
 * **Be listed in in the [18F Vulnerability Disclosure
-Policy](https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md)**. We can add you as part of your
+Policy](https://github.com/18F/vulnerability-disclosure-policy/blob/main/vulnerability-disclosure-policy.md)**. We can add you as part of your
 onboarding to the program, but you'll need to be OK to be listed. Note that
 this probably rules out any apps developed for partners, since we can't
 unilaterally take vulnerability reports for other agencies.
